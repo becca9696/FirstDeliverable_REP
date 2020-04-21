@@ -52,15 +52,6 @@ public class Main {
 			
 			minMaxLastCommit = minMaxDate.minMaxCommit(lastCommit);
 			
-			logger.log(Level.INFO, "---minMaxCommit() output: \n");
-			
-			//Array contentnte data più "vecchia" e recente.
-			for (int i = 0; i < 2; i++) {
-				
-				logger.log(Level.INFO, minMaxLastCommit[i].toString());
-				
-			}	
-			
 			monthlyCommit = minMaxDate.fillNewFeatureFixed(minMaxLastCommit, lastCommit);
 			
 			logger.log(Level.INFO, "----fillNewFeatureFixed() output: \n");
