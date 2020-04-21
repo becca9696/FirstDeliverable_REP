@@ -1,6 +1,7 @@
 package logic;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -34,7 +35,6 @@ public class RetrieveTicketsID {
 		
 		try (BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName(StandardCharsets.UTF_8.toString())))) {
 			
-			//BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
 			String jsonText = readAll(rd);
 			JSONArray json = new JSONArray(jsonText);
 			
@@ -67,10 +67,10 @@ public class RetrieveTicketsID {
 		
 	}
 
-   public ArrayList<String> retriveTickets() throws IOException, JSONException {
+   public List<String> retriveTickets() throws IOException, JSONException {
 	   
 	   //ArrayList di file Json
-	   ArrayList<String> jsonList = new ArrayList<>();
+	   List<String> jsonList = new ArrayList<>();
 	   
 	   String projName ="BAHIR";
 	   Integer j = 0;
