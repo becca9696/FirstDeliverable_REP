@@ -35,7 +35,7 @@ public class Main {
 			
 			for (int i = 0; i < jsonList.size(); i++) {
 				
-				logger.log(Level.INFO, "	TicketID: "  + jsonList.get(i));	
+				logger.log(Level.INFO, jsonList.get(i));	
 				
 			}
 			
@@ -46,7 +46,7 @@ public class Main {
 			
 			for (int i = 0; i < lastCommit.size(); i++) {
 			
-				logger.log(Level.INFO, jsonList.get(i), lastCommit.get(i));		
+				logger.log(Level.INFO, jsonList.get(i), lastCommit.get(i));			
 				
 			}
 			
@@ -57,7 +57,7 @@ public class Main {
 			//Array contentnte data più "vecchia" e recente.
 			for (int i = 0; i < 2; i++) {
 				
-				logger.log(Level.INFO, "	" + minMaxLastCommit[i].toString());
+				logger.log(Level.INFO, minMaxLastCommit[i].toString());
 				
 			}	
 			
@@ -67,7 +67,7 @@ public class Main {
 			
 			for (NewFeatureFixed n: monthlyCommit) {
 				
-				logger.log(Level.INFO, "	DATE: " + n.getYear() + "/" + n.getMonth() + ":" + n.getNumNewFeatureFixed());	
+				logger.log(Level.INFO, "DATE: " + n.getYear() + "/" + n.getMonth() + ":" + n.getNumNewFeatureFixed());
 				
 			}
 			
