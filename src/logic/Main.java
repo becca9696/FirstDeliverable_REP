@@ -46,7 +46,7 @@ public class Main {
 			
 			for (int i = 0; i < lastCommit.size(); i++) {
 			
-				logger.log(Level.INFO, "	TicketID: "  + jsonList.get(i) + ": " + lastCommit.get(i));			
+				logger.log(Level.INFO, jsonList.get(i), lastCommit.get(i));		
 				
 			}
 			
