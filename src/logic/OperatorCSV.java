@@ -31,7 +31,7 @@ public class OperatorCSV {
 	        }
 			
 	        bw.flush();
-	        bw.close();
+	    
 		}
 	       
 	    catch (IOException e) { logger.info(e.toString());  }
